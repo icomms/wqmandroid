@@ -1,0 +1,8 @@
+<resources>
+	<color name="calendar_today_bg">#ffcccccc</color>
+	<color name="calendar_today_text">#ff0000ff</color>
+	<color name="calendar_text">#ffaaaaaa</color>
+	<color name="calendar_text_highlight">#ffaaaaaa</color>
+	<color name="calendar_bg">#ffffffff</color>
+	<color name="calendar_data_text">#ff000000</color>
+</resources>

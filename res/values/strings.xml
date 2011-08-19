@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="set_default_municipality">Set the Default Municipality</string>
+    <string name = "update_data_dialog_text">Would you like to update now?</string>
+    <string name="update_data">Update Data</string>
+    <string name="clear_database">Clear Database </string>
+    <string name="hello">Hello World, WQM!</string>
+    <string name="app_name">WQM</string>
+    <string name="default_municipality">Default Municipality</string>
+    <string name="browse_municipality">Browse Municipality</string>
+    
+    <string name = "welcome_text">Select municipality:</string>
+    
+    <string name ="conf_off">Off</string>
+	<string name ="conf_hour">1 hour</string>
+    <string name ="conf_three">3 hour</string>
+    <string name ="conf_day">1 day</string>
+    
+    <string-array name="homescreen_options">
+		<item>Default Municipality</item>
+		<item>Browse Municipalities</item>
+	</string-array>
+	<string name="browse_towns">Browse Towns</string>
+    <string name="calendar_view">Calendar</string>
+    <string name="map_view">Map View</string>
+    
+	
+	
+</resources>

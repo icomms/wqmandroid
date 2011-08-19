@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.aquatest.ui"
+      android:versionName="2.0" android:versionCode="2">
+    <application android:label="@string/app_name" android:name="AquaTestApp" android:debuggable="true" android:icon="@drawable/wqr_icon">
+    
+    <uses-library android:name="com.google.android.maps" />
+    
+        <activity android:name=".AquaTest"
+                  android:label="@string/app_name">
+            <intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+     <activity android:name="Splash">
+            <intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.VIEW" />
+            </intent-filter>
+     </activity>
+    <activity android:name="MunicipalityOptions" android:label="Municipality Options"></activity>
+    <activity android:name="AquaMap" android:label="AquaMap"></activity>
+<activity android:name="Municipalities" android:label="Municipalities"></activity>
+<activity android:label="Towns" android:name="Towns"></activity>
+<activity android:name="TownOptions"></activity>
+<activity android:name="Parameters" android:label="Parameters"></activity>
+<activity android:name="AquaCalendar"></activity>
+<activity android:name="Overview" android:label="Overview"></activity>
+<activity android:name="SingleParameter"></activity>
+<activity android:name="DataList"></activity>
+<activity android:name="DayData"></activity>
+</application>
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest> 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout02" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:keepScreenOn="true">
+
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_weight="1"
+		android:layout_height="160px">
+		<RadioGroup android:id="@+id/dv_radio_group"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		</RadioGroup>
+
+	</ScrollView>
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_gravity="bottom" android:layout_height="fill_parent"
+		android:layout_weight="1">
+		<Button android:layout_height="wrap_content" android:id="@+id/OKButton"
+			android:cursorVisible="false" android:layout_weight="1"
+			android:layout_width="wrap_content" android:text="OK"></Button>
+		<Button android:layout_height="wrap_content" android:text="Cancel"
+			android:id="@+id/CancelButton" android:layout_weight="1"
+			android:layout_width="wrap_content"></Button>
+
+	</LinearLayout>
+
+</LinearLayout>

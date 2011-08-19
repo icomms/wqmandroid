@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:id="@+id/CalendarLinearLayout"
+	android:keepScreenOn="true">
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_gravity="center" android:gravity="center"
+		android:id="@+id/CalendarMonthLayout">
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/CalendarPreviousMonthButton"
+			android:src="@drawable/arrow_left"></ImageButton>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:text="January" android:id="@+id/CalendarMonth"
+			android:textSize="20px" android:textStyle="bold"
+			android:layout_weight="1" android:gravity="right"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/TextSpacer"
+			android:text="  "></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/CalendarYear"
+			android:text="2008" android:textSize="20px" android:layout_weight="1"></TextView>
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/CalendarNextMonthCalendar"
+			android:src="@drawable/arrow_right" android:layout_gravity="center"></ImageButton>
+
+
+
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/DayLabels" android:layout_width="fill_parent"
+		android:orientation="horizontal">
+
+		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="S"
+			android:layout_weight="1" android:gravity="center" android:textStyle="bold">
+		</TextView>
+		<TextView android:id="@+id/TextView02" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="M"
+			android:layout_weight="1" android:gravity="center" android:textStyle="bold">
+		</TextView>
+		<TextView android:id="@+id/TextView03" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="T"
+			android:layout_weight="1" android:gravity="center" android:textStyle="bold">
+		</TextView>
+		<TextView android:id="@+id/TextView04" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="W"
+			android:layout_weight="1" android:gravity="center" android:textStyle="bold">
+		</TextView>
+		<TextView android:id="@+id/TextView05" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="T"
+			android:layout_weight="1" android:gravity="center" android:textStyle="bold">
+		</TextView>
+		<TextView android:id="@+id/TextView06" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="F"
+			android:layout_weight="1" android:gravity="center" android:textStyle="bold">
+		</TextView>
+		<TextView android:id="@+id/TextView07" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="S"
+			android:layout_weight="1" android:gravity="center" android:textStyle="bold">
+		</TextView>
+
+
+	</LinearLayout>
+
+	<GridView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:numColumns="7"
+		android:verticalSpacing="2dp" android:horizontalSpacing="2dp"
+		android:stretchMode="columnWidth" android:gravity="center"
+		android:id="@+id/CalendarGridView">
+	</GridView>
+
+</LinearLayout>
