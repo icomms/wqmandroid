@@ -19,6 +19,10 @@ CONFIGURE PROJECT
 2.1. On line 46 set the URL of your webservice (provided by https://github.com/icomms/wqmanager)
 2.2. On line 66 set the access key for the webservice (defined in wqmanager local.ini) 
 
+RUNNING PROJECT IN EMULATOR
+---------------------------
+1. Right-click the wqmandroid project in your Eclipse project navigator, click Run as > Android application
+
 INSTALLING APPLICATION (HTC)
 ----------------------------
 1. Connect Android device to PC via USB
