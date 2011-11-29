@@ -1,16 +1,16 @@
-Add a municipality id from wqmauthority table to limit the app to one municipality.
+Add a municipality id from the wqmanager wqmauthority table to limit the app to one municipality.
 
 The app will parse this file assuming that it contains ONLY an integer, and no other info at all:
 
-  - If there is no data in this file, or the data cannot be parsed as an integer, then all municipalities
-will be accessible. 
+ - If there is no data in this file, or the data cannot be parsed as an integer, then all municipalities
+   will be accessible. 
 
-  - If this file contains just an integer, then only the municipality with that id in wqmauthority table
-will be accessible.
+ - If this file contains just an integer, then only the municipality with that id in wqmauthority table
+   will be accessible.
 
-  - If no municipality exists with that id, then the database will appear to be empty, 
-since no municipalities will be accessible.
+ - If no municipality exists with that id, then the database will appear to be empty, 
+   since no municipalities will be accessible.
 
-  - Removing the file will have the effect that the application will be unlocked; all municipalities will be available.
+ - Removing the file will have the effect that the application will be unlocked; all municipalities will be available.
 
-  - To update the file after the application has been built, use the Android SDK tool aapt.
+ - To update the file after the application has been built, use the Android SDK tool aapt.

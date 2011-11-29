@@ -1,30 +1,44 @@
+The Water Quality Manager (WQM) tool for the Android platform allows managers and technicians to view data submitted 
+by reporters using the Water Quality Reporter (WQR) tool (https://bitbucket.org/icomms/wqreporter/overview). 
+
+GET THE CODE
+------------
+git clone git://github.com/icomms/wqmandroid.git
+
 ENVIRONMENT SETUP
 -----------------
 1. Install Eclipse IDE for Java EE Developers (http://www.eclipse.org/downloads/)
+
 2. Install Android SDK (http://developer.android.com/sdk/installing.html)
+2.1. [Optional] Add the Android SDK /tools/ directory to your environment path
 
 PROJECT SETUP
 -------------
 1. Open Eclipse
 
 2. File > Import > General > Existing Projects into Workspace:
-2.1. Select the wqmandroid project folder and click Finish
+2.1. Find and select the wqmandroid project root directory and click Finish
 
 CONFIGURE PROJECT
 -----------------
 1. Get a Google Maps API key from http://code.google.com/android/add-ons/google-apis/mapkey.html
-1.1. Copy this key into the android:apiKey variable in res/layout/map.xml
+1.1. Copy this key into the android:apiKey variable in res/layout/map.xml (line 10)
 
 2. Open src/com.aquatest.webservice/AquaTestWebService.java
 2.1. On line 46 set the URL of your webservice (provided by https://github.com/icomms/wqmanager)
-2.2. On line 66 set the access key for the webservice (defined in wqmanager local.ini) 
+2.2. On line 66 set the access key for the webservice (defined in above wqmanager local.ini) 
+
+3. Open assets/config/config.txt
+3.1. Read the instructions in this file and then replace them with a single integer representing a wqmanager authority
 
 RUNNING PROJECT IN EMULATOR
 ---------------------------
 1. Right-click the wqmandroid project in your Eclipse project navigator, click Run as > Android application
+2. If Eclipse gives a build path error, go to Project > Clean and select the project and then OK and try again
 
 INSTALLING APPLICATION (HTC)
 ----------------------------
 1. Connect Android device to PC via USB
-2. Select "HTC Sync" on the device
-3. In console run: adb install bin/<package.apk> 
+2. Select "HTC Sync" on the device and then the Home button
+3. In console run: <path to android sdk>/tools/adb install wqmandroid/bin/WQManager.apk
+ 
